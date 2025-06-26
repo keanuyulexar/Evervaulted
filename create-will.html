@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create My Will | Evervaulted</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <img src="images/evervaulted.logo.jpg" class="logo" alt="Evervaulted Logo" />
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="create-will.html" class="active">Create Will</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Let's Get Started – Create My Will</h2>
+        <p>Please fill out the details below to begin setting up your secure digital will.</p>
+
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          
+          <h3>👤 Personal Information</h3>
+          <input type="text" name="full_name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+          <input type="text" name="phone" placeholder="Phone Number" />
+          <input type="text" name="id_number" placeholder="National ID / Passport Number" required />
+
+          <h3>🏠 Address Details</h3>
+          <input type="text" name="address_line1" placeholder="Street Address" required />
+          <input type="text" name="city" placeholder="City" required />
+          <input type="text" name="province" placeholder="Province / State" required />
+          <input type="text" name="zipcode" placeholder="Zip / Postal Code" />
+
+          <h3>🧾 Assets Overview</h3>
+          <textarea name="assets" placeholder="List of Assets (e.g. home, car, crypto, bank accounts)" required></textarea>
+
+          <h3>👨‍👩‍👧 Beneficiaries</h3>
+          <textarea name="beneficiaries" placeholder="List beneficiaries, their relation to you, and what they should receive" required></textarea>
+
+          <h3>📜 Final Wishes</h3>
+          <textarea name="final_wishes" placeholder="Any final notes, legacy messages, or funeral preferences"></textarea>
+
+          <h3>🔐 Access & Executors</h3>
+          <input type="text" name="executor_name" placeholder="Executor Full Name" required />
+          <input type="email" name="executor_email" placeholder="Executor Email" required />
+
+          <button type="submit" class="btn-primary">Submit My Will</button>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Evervaulted. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

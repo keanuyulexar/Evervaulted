@@ -1,0 +1,271 @@
+/* ------------------- GLOBAL ------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+  color: #1A2B4C;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------------- NAVIGATION ------------------- */
+header {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-weight: bold;
+  padding: 8px 12px;
+  color: #1A2B4C;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #D4AF37;
+  color: white;
+}
+
+/* ------------------- SECTION GENERAL ------------------- */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.alt-bg {
+  background-color: #f5f7fa;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ------------------- HEADINGS ------------------- */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* ------------------- BUTTONS ------------------- */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #D4AF37;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #bfa134;
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+  background-color: #1A2B4C;
+  color: white;
+}
+
+.btn-secondary:hover {
+ background-color: #15203c;
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* ------------------- HERO ------------------- */
+#hero {
+  padding: 120px 20px;
+  background: linear-gradient(to right, #fdfdfd, #f0f0f0);
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* ------------------- FEATURES GRID ------------------- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-box {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+/* ------------------- LISTS ------------------- */
+ul li::before {
+  content: '•';
+  margin-right: 10px;
+  color: #D4AF37;
+}
+
+/* ------------------- CONTACT ------------------- */
+.contact-info {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background: #D4AF37;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background: #bfa134;
+}
+
+/* ------------------- FOOTER ------------------- */
+footer {
+  background: #1A2B4C;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+/* ------------------- SPACING POLISH ------------------- */
+.section p, .section ul, .section ol {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #2c3e50;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #1A2B4C;
+}
+
+ul, ol {
+  text-align: left;
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+}
+
+/* ------------------- BUTTON POLISH ------------------- */
+.btn-primary, .btn-secondary {
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
