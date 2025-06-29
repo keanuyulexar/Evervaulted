@@ -1,0 +1,14 @@
+{
+  "name": "evervaulted-website",
+  "version": "1.0.0",
+  "description": "Evervaulted - Digital Will & Asset Planning Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static HTML site - no build process needed'",
+    "start": "echo 'Static HTML site - open index.html in browser'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["digital-will", "estate-planning", "legacy", "vault"],
+  "author": "Evervaulted",
+  "license": "ISC"
+}
